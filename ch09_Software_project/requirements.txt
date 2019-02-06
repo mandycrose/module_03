@@ -1,0 +1,21 @@
+Must Have:
+* database for people for businesses (1 day)
+
+* search functionality: (3 days)
+- search by business type
+- search by business name
+- search by person's surname
+
+* filter by: (2 days)
+- location (distance from a postcode input)
+- alphabetically
+
+Should Have: (4 days)
+
+* Flask front end integration
+
+Could Have: (3 day)
+
+* Bootstrap - tables
+* custom css styles
+* Adiitional search fuctionality
