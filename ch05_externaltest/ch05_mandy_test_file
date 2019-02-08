@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+
+@author: mandyrose
+"""
+
+from ch05_mandy import *
+import unittest
+
+class TestCalculatorExample(unittest.TestCase):
+    def setUp(self):
+        self.calc = Calculator()
+        
+    def test_calculator_args_not_numbers(self):
+        self.assertRaises(ValueError, self.calc.add, 'two', 'three')
+        
+    def test_calculator_add(self):
+        result = calc.add(2,2)
+        self.assertEqual(4, result)
+        
+    def test__scalculator_subtract(self):
+        result = self.calc.subtract(20, 10)
+        self.assertEqual(result, 0)
+    
+    def test_calculator_multiply(self):
+        result = self.calc.multiply(10, 3)
+        self.assertEqual(result, 30)
+        
+        
+if __name__ == "__main__":
+    unittest.main()
